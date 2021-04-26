@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home - TripGuide</title>
+</head>
+
+<body>
+<h1>TripGuide</h1>
+
+<hr>
+
+<marquee> 10 Tourist Attractions in Kerala that You Must Visit !! </marquee>
+<hr>
+
+<table style="float:right" cellspacing=10 >
+	<tr>
+            <th>
+                <h4>TripGuide</h4>
+            </th>
+
+            <td><a href="./browse.html">Browse Destinations</a></td>
+            <td><a href="./register.html">Register</a></td>
+            <td><a href="./gallery.html">Gallery</a></td>
+            <td><a href="./aboutus.html">About Us</a></td>
+            <td><a href="./contactus.html">Contact us</a></td>
+        </tr>
+</table>
+
+    <form class="register-card" action="./login.html">
+
+        
+        <h1 class="register-title">Register</h1>
+       
+        <label class="login-label">First Name:<br><input type="text" placeholder="Enter your First Name"></label><br>
+        <label class="login-label">Last Name:<br><input type="text" placeholder="Enter your Last Name"></label><br>
+        <label class="login-label normal-width">Sex:
+            <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+            <input type="radio" name="gender" id="gender">Other
+        </label><br>
+        <label class="login-label">DOB:<br><input type="date" placeholder="Enter your DOB"></label><br>
+        <label class="login-label">Phone:<br><input type="tel" placeholder="Enter your First Name"></label><br>
+        <label class="login-label">Email:<br><input type="text" placeholder="Enter your Email"></label><br>
+        <label class="login-label">Profile Picture:<br><input type="file" accept="image/*"></label><br>
+        <label class="login-label normal-width">Destination:<br>
+            &nbsp;&nbsp;&nbsp;<input type="checkbox" id="Alleppey"><label for="Alleppey"> Alleppey</label><br>
+            &nbsp;&nbsp;&nbsp;<input type="checkbox" id="Thekkady"><label for="Thekkady"> Thekkady</label><br>
+            &nbsp;&nbsp;&nbsp;<input type="checkbox" id="Kochi"><label for="Kochi"> Kochi</label><br>
+            &nbsp;&nbsp;&nbsp;<input type="checkbox" id="Munnar"><label for="Munnar"> Munnar</label><br>
+            &nbsp;&nbsp;&nbsp;<input type="checkbox" id="Kovalam"><label for="Kovalam"> Kovalam</label><br>
+        </label><br>
+        <label class="login-label">Address:<br><textarea name="" id="" cols="30" rows="5"></textarea></label><br>
+        
+        <button class="primary-button" onclick="submit()" type="submit">Submit</button><input class="secondary-button"
+            type="reset" value="Reset">
+
+    </form>
+
+<footer>
+	<center> TripGuide | &copy TripGuide </center>
+</footer>
+
+    <script>
+        function submit() {
+            alert("Successfully Registered!");
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
